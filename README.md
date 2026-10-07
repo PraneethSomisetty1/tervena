@@ -1,6 +1,8 @@
-# Tervena Health — interactive product demo
+# Tervena Health — landing page and interactive demo
 
-A responsive, dependency-free demo built with HTML, CSS, and JavaScript. Designed for pitch meetings: patient connections → clinician review → evidence and interpretation.
+A responsive, dependency-free website built with HTML, CSS, and JavaScript. The landing page presents the patient-first vision and proposed one-clinic pilot. The existing interactive demo is preserved at `/demo.html`.
+
+Routes: `/` for the landing page; `/demo.html` for the demo. No contact email or lead form is configured yet. The landing page audience tabs and FAQ work entirely in the browser.
 
 ## Run locally
 
@@ -28,7 +30,7 @@ npm run preview  # Serve the built dist/ directory
 
 Alternatively, from this directory, run `npx vercel` and follow the Vercel CLI prompts. Run `npx vercel --prod` when ready to publish the production deployment.
 
-The demo has not been deployed to your Vercel account. This package contains everything needed for the static website.
+Import this repository into Vercel using the settings above. If the repository is already connected, pushing to the configured production branch can trigger a new deployment.
 
 ## A 90-second pitch walkthrough
 
@@ -57,7 +59,9 @@ Fonts load from Google Fonts with local sans-serif fallbacks. No analytics or tr
 
 ## Files
 
-- `public/index.html`: application shell and metadata
+- `public/index.html`: public landing page
+- `public/landing.css` and `public/landing.js`: landing-page design and audience tabs
+- `public/demo.html`: interactive demo shell and metadata
 - `public/style.css`: design and responsive layout
 - `public/app.js`: rendering and interactions
 - `public/model.js`: synthetic readings, summary calculations, report generation
